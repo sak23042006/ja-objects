@@ -16,16 +16,25 @@ var studentProfile = {
 
 // Step 2: Add more then one hobby in the student object.
 //Hint: Use Arrays
-studentProfile.hobbies.push('watching movies');
 
 // Your code goes here
+studentProfile.hobbies.push('watching movies');
 
 // Challenge 1.2: Access the studentName value of the object "studentProfile" using dot "." notation and print the same in console.
+console.log(studentProfile.studentName);
 
 //Challenge 1.3: Access the cohortName property of the object using Bracket notation ([]).
+console.log(studentProfile['cohortName']);
 
 //Challenge 2.1:Create an object using the constructor function for storing the book information. The object name can be "Book". Include the following values .
 //title
 //author
 
+const books = new Book('Nothing', 'Sak');
+function Book(name, author) {
+  this.title = name;
+  this.author = author;
+}
+
 //Challenge 2.2: Access the title property of the object "Book" and print the same in console.
+console.log(books.title);
